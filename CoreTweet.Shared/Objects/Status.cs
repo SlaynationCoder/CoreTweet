@@ -41,6 +41,13 @@ namespace CoreTweet
         /// </summary>
         [JsonProperty("id")]
         public long Id { get; set; }
+        
+        /// <summary>
+        /// <para>Gets or sets the integer representation of the REAL unique identifier for this Tweet.</para>
+        /// <para>See also: https://dev.twitter.com/docs/twitter-ids-json-and-snowflake</para>
+        /// </summary>
+        [JsonProperty("id_str")]
+        public long Id_str { get; set; }
 
         /// <summary>
         /// <para>Gets or sets the collection of brief user objects (usually only one) indicating users who contributed to the authorship of the tweet, on behalf of the official tweet author.</para>
